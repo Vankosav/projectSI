@@ -1,19 +1,18 @@
-import { Button } from "@/components/ui/button";
-import { ContactForm } from "@/components/ui/form"; // Adjust the path if needed
 import Navbar from "@/components/ui/navbar";
-
-
-import Image from "next/image";
+import SectionOne from "@/components/ui/sectionone";
+import ContactForm from "@/components/ui/form";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Navbar/>
-      <h1>Contact Us</h1>
-      <ContactForm />
-      
+    <div>
+      <Navbar />
+      <main className="pt-16">
+        <SectionOne />
+        <section id="contact" className="py-16">
+          <h1 className="text-center text-2xl font-bold mb-8">Contact Us</h1>
+          <ContactForm />
+        </section>
+      </main>
     </div>
   );
 }
-
-

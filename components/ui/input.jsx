@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 
 const Input = ({ name, label, as = "input", form, ...props }) => {
