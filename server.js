@@ -7,7 +7,7 @@ const app = express();
 connectDB();
 
 // Define API routes
-app.get("/pages/api/hello.js", (req, res) => res.send("Hello World!"));
+app.get("/", (req, res) => res.send("Hello World!"));
 
 // Listen on a specific port
 const PORT = process.env.PORT || 5001;

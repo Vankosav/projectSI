@@ -24,43 +24,41 @@ export function ContactForm() {
   });
 
   const onSubmit = async (values) => {
-    console.log("Submitting form:", values);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
-    });
-
-    if (response.ok) {
-      alert("Form submitted successfully!");
-      form.reset();
-    } else {
-      alert("Error submitting form.");
+      if (response.ok) {
+        alert("Form submitted successfully!");
+        form.reset();
+      } else {
+        alert("Error submitting form.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Unexpected error occurred.");
     }
   };
 
   return (
-    <form
-      onSubmit={form.handleSubmit(onSubmit)}
-      className="space-y-6 max-w-lg mx-auto p-4 bg-white shadow-md rounded-md md:space-y-8"
-    >
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <Input
-          name="firstName"
-          label="First Name"
-          form={form}
-          placeholder="Enter your first name"
-        />
-        <Input
-          name="lastName"
-          label="Last Name"
-          form={form}
-          placeholder="Enter your last name"
-        />
-      </div>
+    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <Input
+        name="firstName"
+        label="First Name"
+        form={form}
+        placeholder="Enter your first name"
+      />
+      <Input
+        name="lastName"
+        label="Last Name"
+        form={form}
+        placeholder="Enter your last name"
+      />
       <Input
         name="email"
         label="Email"
@@ -76,10 +74,7 @@ export function ContactForm() {
         placeholder="Enter your message"
         rows={4}
       />
-      <button
-        type="submit"
-        className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition"
-      >
+      <button type="submit" className="btn">
         Submit
       </button>
     </form>
