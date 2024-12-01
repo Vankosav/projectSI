@@ -1,6 +1,9 @@
 import Navbar from "@/components/ui/navbar";
-import SectionOne from "@/components/ui/sectionone";
+import SectionOne from "@/components/ui/sectionOne";
+import SectionTwo from "@/components/ui/sectionTwo";
+import Leadership from "@/components/ui/leadership";
 import ContactForm from "@/components/ui/form";
+import { Section } from "lucide-react";
 
 export default function Home() {
   return (
@@ -8,10 +11,10 @@ export default function Home() {
       <Navbar />
       <main className="pt-16">
         <SectionOne />
-        <section id="contact" className="py-16">
-          <h1 className="text-center text-2xl font-bold mb-8">Contact Us</h1>
+        <SectionTwo />
+        <Leadership />
           <ContactForm />
-        </section>
+       
       </main>
     </div>
   );

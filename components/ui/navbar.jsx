@@ -15,7 +15,7 @@ const Navbar = () => {
       {/* Company Logo */}
       <div className="text-lg font-bold logo">
       <a href="#home" className="w-full">
-      <img src="/logo.png" alt="Sapper Intelligence Logo" className="h-12" />
+      <img src="/Logo.png" alt="Sapper Intelligence Logo" className="h-12" />
       </a>
       </div>
 
