@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,9 +15,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full h-16 flex items-center justify-between px-4 bg-gray-800 text-white shadow-lg z-50">
       {/* Company Logo */}
       <div className="text-lg font-bold logo">
-      <a href="#home" className="w-full">
-      <img src="/Logo.png" alt="Sapper Intelligence Logo" className="h-12" />
-      </a>
+        <a href="#home" className="w-full">
+          <img src="/Logo.png" alt="Sapper Intelligence Logo" className="h-12" />
+        </a>
       </div>
 
       {/* Dropdown Menu */}
@@ -33,19 +34,19 @@ const Navbar = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent className="bg-gray-700 text-white w-48">
           <DropdownMenuItem>
-            <a href="#home" className="w-full">
+          <Link href="/" className="w-full">
               Home
-            </a>
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <a href="#about" className="w-full">
-              About
-            </a>
+            <Link href="/mission" className="w-full">
+              Our Mission
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <a href="#contact" className="w-full">
-              Contact
-            </a>
+          <Link href="/career" className="w-full">
+              Career
+            </Link>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

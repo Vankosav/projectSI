@@ -4,7 +4,7 @@ import React from "react";
 
 const Leadership = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#000974] via-[#000974] to-black text-white py-16 px-10 md:px-20">
+    <div className="w-full text-white py-16 px-10 md:px-20">
       {/* Title and Paragraph */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-5xl font-bold mb-6">

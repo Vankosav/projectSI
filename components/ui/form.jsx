@@ -46,7 +46,7 @@ export function ContactForm() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-black text-white py-20 px-6 md:px-20">
+    <div className="w-full min-h-screen text-white py-20 px-6 md:px-20">
       {/* Heading and Description */}
       <div className="text-left mb-12 mt-28 max-w-3xl">
         <h6 className="text-2xl md:text-3xl font-bold mb-4">
@@ -61,7 +61,7 @@ export function ContactForm() {
       {/* Form */}
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="bg-gray-800 rounded-lg shadow-lg w-full max-w-full p-8 grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="bg-black rounded-lg w-full max-w-full p-8 grid grid-cols-1 md:grid-cols-2 gap-6"
       >
         {/* Left Column */}
         <div className="flex flex-col space-y-4">

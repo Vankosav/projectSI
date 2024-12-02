@@ -5,7 +5,7 @@ import React from "react";
 const SectionTwo = () => {
   return (
     <div
-      className="w-full h-screen bg-gradient-to-b from-black via-[#000974] to-[#000974] flex flex-col items-center justify-center text-white text-center"
+      className="w-full h-screen flex flex-col items-center justify-center text-white text-center"
     >
       {/* Text Content */}
       <div className="max-w-3xl px-6">
