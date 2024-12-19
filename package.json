@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "build:css": "postcss styles/index.css -o static/index.css",
     "build": "next build",
     "start": "concurrently \"npm run backend\" \"npm run dev\"",
     "lint": "next lint",
@@ -14,13 +15,16 @@
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-slot": "^1.1.0",
+    "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "googleapis": "^144.0.0",
     "lucide-react": "^0.456.0",
     "mongodb": "^6.10.0",
-    "mongoose": "^8.8.3",  
-    "dotenv": "^16.4.5",
+    "mongoose": "^8.8.3",
     "next": "15.0.3",
+    "nodemailer": "^6.9.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-google-recaptcha": "^3.1.0",
@@ -31,7 +35,7 @@
   },
   "devDependencies": {
     "concurrently": "^9.1.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
   }
 }

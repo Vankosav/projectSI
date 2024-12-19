@@ -4,7 +4,7 @@ import React from "react";
 
 const Leadership = () => {
   return (
-    <div className="w-full text-white py-16 px-10 md:px-20">
+    <div className="bg-black bg-opacity-75 w-[1440px] text-white py-16 px-10 md:px-20 rounded-lg shadow-lg h-fit">
       {/* Title and Paragraph */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-5xl font-bold mb-6">
@@ -17,7 +17,7 @@ const Leadership = () => {
       </div>
 
       {/* Leadership Photos */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-[150px] py-[32px]">
         {/* Team Member 1 */}
         <div className="text-center">
           <div className="p-2">
@@ -33,8 +33,9 @@ const Leadership = () => {
           <p className="text-sm md:text-base">CEO</p>
         </div>
 
-        {/* Team Member 2 */}
-        <div className="text-center">
+
+       {/* Team Member 2 */}
+       <div className="text-center">
           <div className="p-2">
             <img
               src="/leader2.png"

@@ -1,10 +1,10 @@
 const express = require("express");
-const connectDB = require("./configs/db");
+//const connectDB = require("./configs/db");
 
 const app = express();
 
 // Connect to MongoDB
-connectDB();
+//connectDB();
 
 // Define API routes
 app.get("/", (req, res) => res.send("Hello World!"));

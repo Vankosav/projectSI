@@ -12,11 +12,11 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full h-16 flex items-center justify-between px-4 bg-gray-800 text-white shadow-lg z-50">
+    <nav className="fixed top-0 left-0 w-full h-16 flex items-center justify-between px-4 bg-[black] bg-opacity-80 text-white shadow-lg z-50">
       {/* Company Logo */}
       <div className="text-lg font-bold logo">
-        <a href="#home" className="w-full">
-          <img src="/Logo.png" alt="Sapper Intelligence Logo" className="h-12" />
+        <a href="/" className="w-full">
+          <img src="/Logo.png" alt="Sapper Intelligence Logo" className="h-12 w-auto" />
         </a>
       </div>
 
@@ -35,17 +35,12 @@ const Navbar = () => {
         <DropdownMenuContent className="bg-gray-700 text-white w-48">
           <DropdownMenuItem>
           <Link href="/" className="w-full">
-              Home
+              Home Page
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="/mission" className="w-full">
-              Our Mission
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-          <Link href="/career" className="w-full">
-              Career
+            <Link href="/contact" className="w-full">
+              Contact Us
             </Link>
           </DropdownMenuItem>
         </DropdownMenuContent>
