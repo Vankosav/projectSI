@@ -18,7 +18,7 @@ const Contact = () => {
       {/* Content */}
       <div className="relative z-10">
         <Navbar />
-        <main className="pt-16 pb-20">
+        <main className="pt-16 pb-20 flex flex-col gap-y-10">
           <div className="max-w-4xl mx-auto mt-10">
             <SendEmail />
           </div>

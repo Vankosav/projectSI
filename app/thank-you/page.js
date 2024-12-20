@@ -15,7 +15,7 @@ const ThankYou = () => {
       <div className="absolute inset-0 opacity-70"></div> {/* Transparent black overlay */}
       <div className="relative z-10">
         <Navbar />
-        <main className="fixed top-0 left-0 right-0 z-20 pt-16 mt-20"> {/* Added mt-20 to give space */}
+        <main className="pt-16 flex flex-col items-center text-center"> {/* Added mt-20 to give space */}
           <div className="pt-10 text-center"> {/* Padding between Navbar and Thank You message */}
             <h1 className="text-4xl text-white">Thank You!</h1> {/* Title */}
             <p className="text-xl text-white mt-4">Your message has been sent successfully.</p>

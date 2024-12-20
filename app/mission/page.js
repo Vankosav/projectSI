@@ -18,10 +18,10 @@ const MissionPage = () => {
         {/* Content */}
         <div className="relative z-10">
             <Navbar />
-            <main className="pt-16">
-            <div className="pt-10"> {/* Padding between Navbar and SectionOne */}
+            <main className="pt-16 flex flex-col gap-y-10">
+            
                 <Mission />
-            </div>
+        
             </main>
             <div>
             <Footer />
