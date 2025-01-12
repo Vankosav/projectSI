@@ -1,14 +1,22 @@
-const express = require("express");
-//const connectDB = require("./configs/db");
+const express = require('express');
+const next = require('next');
+const dotenv = require('dotenv');
 
-const app = express();
+dotenv.config();
 
-// Connect to MongoDB
-//connectDB();
+const dev = process.env.NODE_ENV !== 'production';
+const app = next({ dev });
+const handle = app.getRequestHandler();
 
-// Define API routes
-app.get("/", (req, res) => res.send("Hello World!"));
+app.prepare().then(() => {
+  const server = express();
 
-// Listen on a specific port
-const PORT = process.env.PORT || 5001;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  server.all('*', (req, res) => {
+    return handle(req, res);
+  });
+
+  server.listen(process.env.PORT || 8080, (err) => {
+    if (err) throw err;
+    console.log('> Ready on http://localhost:8080');
+  });
+});

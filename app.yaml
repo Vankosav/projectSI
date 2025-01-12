@@ -1,0 +1,17 @@
+runtime: nodejs18
+instance_class: F2
+env: standard
+
+health_check:
+  enable_health_check: true
+  check_interval_sec: 10
+  timeout_sec: 10
+  unhealthy_threshold: 3
+  healthy_threshold: 2
+
+handlers:
+  - url: /favicon.ico
+    static_files: public/favicon.ico
+    upload: public/favicon.ico
+  - url: /.* 
+    static_dir: public
