@@ -52,9 +52,9 @@ function SendEmail() {
         className="w-full max-w-4xl space-y-6 mx-auto rounded-lg shadow-lg opacity-90 backdrop-blur-sm "
       >
         <div className="text-center text-white">
-      <h6 className="text-xl md:text-2xl font-bold mb-2">Partnership and Collaboration Inquires</h6>
+      <h6 className="text-xl md:text-2xl font-bold mb-2"></h6>
       <p className="text-sm md:text-lg mb-8">
-          Our technology empowers safe exploration of once-dangerous lands, enabling communities to rebuild with confidence and security.
+           
         </p>
       </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

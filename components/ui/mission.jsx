@@ -6,11 +6,10 @@ const Mission = () => {
       <div className="text-center">
         <h1 className="text-xl md:text-6xl font-bold mb-4">Our Mission</h1>
         <p className="text-sm md:text-lg mb-8">
-          At Sapper Intelligence, we aim to transform innovation into solutions that empower communities and drive meaningful change.
+          Pioneering Safety Through Innovation
         </p>
         <p className="text-sm md:text-lg mb-8">
-          We are dedicated to collaboration, ethical practices, and advancing global progress through technology and education.
-        </p>
+        At Sapper Intelligence, we harness AI-driven remote sensing to detect underground threats, ensuring safer environments for military, humanitarian, and industrial applications.</p>
       </div>
     </div>
   );

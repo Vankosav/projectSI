@@ -1,5 +1,4 @@
-// next.config.js
 module.exports = {
-    output: 'export', // Enable static export
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/app' : '',
   };
   

@@ -19,13 +19,12 @@ const Contact = () => {
       <div className="relative z-10">
         <Navbar />
         <main className="pt-16 pb-20 flex flex-col gap-y-10">
-          <div className="max-w-4xl mx-auto mt-10">
+          {/* Updated container width */}
+          <div className="w-full max-w-[800px] mx-auto mt-10">
             <SendEmail />
           </div>
         </main>
-         <div>
-          <Footer />
-         </div>
+        <Footer />
       </div>
     </div>
   );
